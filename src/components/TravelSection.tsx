@@ -75,7 +75,7 @@ const TravelSection = () => {
             className={`${styles.card} ${index === currentIndex ? styles.cardActive : ''}`}
             href={option.link}
             target="_blank"
-            aria-label={getTravelLabel(option, index)}
+            aria-label={`${getTravelLabel(option, index)}, 새 창에서 열림`}
           >
             <img src={option.image} className={styles.cardImage} alt="" />
             <div className={styles.cardContent} aria-hidden="true">
